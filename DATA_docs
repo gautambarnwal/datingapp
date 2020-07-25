@@ -7,7 +7,7 @@
 
 
 
-==============commands ===============
+==============git commands ===============
 
 github
 https://github.com/1998gtb/datingapp.git
@@ -17,4 +17,29 @@ https://github.com/1998gtb/datingapp.git
 # git add README.md
 # git status
 
-# git add .                    //git add all
+# git add .                              //git add all
+# git status
+# git commit -m "initial commit"         //git commit with message initial commit
+
+# git remote add origin https://github.com/1998gtb/datingapp.git
+
+# git push -u origin master
+	OR
+# git push -f origin master               // —force pushing
+
+
+==============git commands end===============
+
+
+
+
+
+
+
+
+# php artisan make:model Model/Profile -a
+# php artisan make:model Model/Image -a
+# php artisan make:model Model/Like -a
+# php artisan make:model Model/Chat -a
+
+# php artisan route:list

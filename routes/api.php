@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResource('/profile','ProfileController');
+Route::group(['prefix'=>'profile'], function(){
+	Route::apiResource('{profile}/likes','LikeController');
+});
