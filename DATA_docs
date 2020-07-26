@@ -12,7 +12,7 @@
 github
 https://github.com/1998gtb/datingapp.git
 
-
+<!-- for fist time setup-->
 # git init
 # git add README.md
 # git status
@@ -28,6 +28,14 @@ https://github.com/1998gtb/datingapp.git
 # git push -f origin master               // —force pushing
 
 
+
+<!-- for every time push-->
+# git status                         // check somo changes are there or not  
+# git add .                          // add all to commit
+# git status	                     // what are Changes to be committed:
+# git commit -m "created models"     // commiting with message "created models"
+# git status                         // Checking working tree clean or not
+# git push -u origin master          // push to master branch{ we have added origin earlier}
 ==============git commands end===============
 
 
@@ -43,3 +51,22 @@ https://github.com/1998gtb/datingapp.git
 # php artisan make:model Model/Chat -a
 
 # php artisan route:list
+
+
+
+--------
+
+# composer require laravel/ui
+
+# php artisan ui bootstrap --auth       //Using Bootstrap: (i used this)
+
+# php artisan ui vue --auth             // Using Vue:
+
+# php artisan ui react --auth           //  Using React:
+
+# npm install                           // Install NPM:
+# npm run dev                           //Run NPM: 
+
+-- Remove vue and vue-template-compiler from the devDependencies in your package.json file.
+-- Run npm update     -- Remove the following code from your app.js file...
+-- "vue-template-compiler": "^2.6.11"	
