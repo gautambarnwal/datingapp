@@ -70,3 +70,19 @@ https://github.com/1998gtb/datingapp.git
 -- Remove vue and vue-template-compiler from the devDependencies in your package.json file.
 -- Run npm update     -- Remove the following code from your app.js file...
 -- "vue-template-compiler": "^2.6.11"	
+
+
+
+# php artisan db:seed
+
+# php artisan tinker
+ >>> App\User::find(64)->images
+ >>> App\User::find(64)
+ >>> App\User::find(64)->profile
+
+
+// passport config ---- https://laravel.com/docs/7.x/passport
+# composer require laravel/passport
+# php artisan migrate
+# php artisan passport:install
+

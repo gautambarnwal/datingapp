@@ -1,0 +1,28 @@
+
+/---- To get access toke send POST request on this URL(where localhost can be app url)
+localhost:8000/oauth/token
+
+/---- pass headers with
+Accept : application/json
+Content-Type : application/json
+
+/---- pass these in body->row
+{
+	"grant_type" : "password",
+	"client_id" : "2",
+	"client_secret" : "aF2uJycUI32O0gmzsn6E7nBmYLFLh8ItoxZuUeOg",
+	"username" : "1998gtb@gmail.com",
+	"password" : "123456"
+}
+------------------------------------------
+/---- you will get access token
+{
+    "token_type": "Bearer",
+    "expires_in": 31536000,
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIyIiwianRpIjoiYjJmNjUxNDk3ODBiYjk4OTBlNzhlYWM5MGY5NTI0MWRiYTE3ZDY0MTFiNjM1MjA3Mzc0N2M5MWIwNTI4ODQxMjZmYmFmNjYxZDY0MDFjMTUiLCJpYXQiOjE1OTU4NzkxOTEsIm5iZiI6MTU5NTg3OTE5MSwiZXhwIjoxNjI3NDE1MTkxLCJzdWIiOiI0MDEiLCJzY29wZXMiOltdfQ.L3g3jOsemMnX8H0JVw3b5lj9qxJ59O6tEGzuJ2fAenS9ZE8O6sRaSTuSQWWdUj0Ya1PVfILa9Kfw4RgABbQWXuVjuXb1W1ot_8dTiXELaQkwUeYkouasR0hlNjJAzdzcXrdDwMYXu9yx21tA1Sf0rQeSWKLvGICs04A2SamCnOteAFyksqDKmOVA9921pe6Skw0DijQF0Xi2h-bpBDc-61Frhzg-0RMDMYQ4uxAu79zXY6ML1fX7uUiCTjMJogG4oP0fNDSAazl9AX77xagfXoJtY9BH_gignOlUDlfRN7CWljN4e42ZsLYeMz6kCGxf0Q3DtRogcBrRfyyt8tk3h-y_IDVZDJRSZMbHthxODtV8L_MGdvfZbpRX6kc5EAYwHcpC9AGNaVBcFIhfhaxSY4UpVCA9LiLVyfE0ukDz59Kuya6E1jzjEKuxSm6IuopTLuFTNtxWlxCJvTZfTF1SS0OEcWyedcdX6a_DjV0NFH92mYtJ1imWspG6D6wzDkY5ZKfasGgMCdSXad3LaZQmly99JSrYIeUuhHfmJOWO2_XXs1OXpFNjPGKJN9V_HTHYs_Wum1SaC_KGYxKyqFhqireAICyk_T-7ufUx4oyLPjrWMpGuQllQAkJb-v9t8Odla0IVVeYRQimzKTzt68NK7qCKm1pPvAGCKb2NWP6tf5k",
+    "refresh_token": "def5020017af912c8b1c9b49d57722985c985e5cac32bedce0a99a16e3c7c7d0a16cb092dadaa85c351ad451e818490d036a8489defecf55ed6b230a334c9e35997fba817c435430cdf4286ba57e14a39505a271842ba3ade098f1148ec942d62e81128141b70e01e793b78f912b540297d2421dd925642678795820f46da89100b1cfde4b2f3e045988bcec3dd0edff1a4f49036507e810fac8edba82d268bdb5a2285f59e17b209d5f70e26d05b40bddb62bf3a8d82e09ae53fb744ff18a8ee7976670cc1212f3cff82799ca5aa383e6b81c7dd262d7b9e7203fd35895794c8822c4ebdb6b63abb1165916e2fa6310f0c07c976d3b16a081840006e1766bbb187c049f69e6723bf2eff0743525789e1327a45ffe4d115c9eac0305febe00ca918c0fd445d90de4339c8138ab6aacbb4e811b4c14f19d2e40a95e050a80755046fd4d66cb4df3bf6545d41448d9234ea9d27b30b41465374e9b0df2a1666be29119f8"
+}
+
+======================end============================================================
+
+/---- After getting access token user can ACCESS his data using this format
